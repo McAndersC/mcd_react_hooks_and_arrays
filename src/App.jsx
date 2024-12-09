@@ -2,10 +2,6 @@ import { useRoutes } from "react-router-dom";
 // Common Pages.
 import HomePage from "./pages/home/HomePage";
 import Navigation from "./components/Navigation/Navigation";
-import SubscribersPage from "./pages/subscribers/SubscribersPage";
-import SubscriberView from "./components/Subscribers/SubscriberView";
-import SubscribersBackofficePage from "./pages/backoffice/subscribers/SubscribersPage";
-
 // Application
 const App = () => {
 
