@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom";
 // Common Pages.
 import HomePage from "./pages/home/HomePage";
 import Navigation from "./components/Navigation/Navigation";
+import BoxesPage from "./pages/boxes/BoxesPage";
 // Application
 const App = () => {
 
@@ -12,6 +13,10 @@ const App = () => {
             {
               path: "/",
               element : <HomePage></HomePage>
+            },
+            {
+              path: "/boxes",
+              element : <BoxesPage></BoxesPage>
             },
             {
               path: "*",

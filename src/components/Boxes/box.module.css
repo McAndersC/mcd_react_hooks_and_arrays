@@ -1,0 +1,31 @@
+.box {
+
+    width: 128px;
+    height: 128px;
+    background-color: black;
+    color : #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border : 1px solid #000;
+    text-align: center;
+
+    &.green {
+        background-color: green;
+    }
+
+    &.red {
+        background-color: red;
+    }
+
+    &.white {
+        background-color: #fff;
+        color : #000;
+    }
+
+    &.purple {
+        background-color: #fff;
+        color : maroon
+    }
+
+}
