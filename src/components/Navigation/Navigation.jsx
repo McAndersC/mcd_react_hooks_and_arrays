@@ -28,6 +28,7 @@ const Navigation = () => {
 
                 <div className={`${styles.nav} ${isOpen ? styles.open : ''}` }>
                     <NavLink to={"/"} className={({ isActive }) => (isActive ? styles.active : "")}>Home</NavLink>
+                    <NavLink to={"/boxes"} className={({ isActive }) => (isActive ? styles.active : "")}>Boxes</NavLink>
                 </div>
                 
                 <div onClick={toggleNavigation}>
