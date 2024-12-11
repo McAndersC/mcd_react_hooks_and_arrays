@@ -10,7 +10,7 @@ Læs **ALLE TRIN** inden du får igang - så du har et lille overblik over opgav
 
 Trin 9. - Mere eller mindre frivillig.
 
-* Prøv nu at oprette eb side med to `<ClickMachines>` - Kan vi håndtere to.?
+* Prøv nu at oprette en side `<ManyMachines>` med to `<ClickMachines>` - Kan vi håndtere to og hvordan?
 
 
 
