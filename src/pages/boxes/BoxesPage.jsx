@@ -18,16 +18,8 @@ const BoxesPage = () => {
             color : "red"
         },
         {
-            value : 3,
-            color : "white"
-        },
-        {
-            value : 3,
+            value : 2,
             color : "red"
-        },
-        {
-            value : 3,
-            color : "purple"
         }
     ])
 
