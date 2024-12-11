@@ -8,7 +8,7 @@ Følgende Udfordringer.
 
 Læs **ALLE TRIN** inden du får igang - så du har et lille overblik over opgaver og måske det former din tankegang i forhold til hvordan du griber det an.
 
-Trin 7.
+Trin 7. 
 
 * Det skal være muligt at slette en maskine fra listen.
 
@@ -19,10 +19,10 @@ Trin 8.
 
     * Kompakt view er en cirkel med rigtig farve, titel og tal.
 
-    * Opret et <CompactViewList> Komponent som henter alle maskiner og viser dem i deres "kompakte" udgave.
+    * Opret et `<CompactViewList>` Komponent som henter alle maskiner og viser dem i deres "kompakte" udgave.
 
     * Indsæt komponentet på en side vi kalder `<PrettyMachinePage>` og urlen skal være "/prettymachines" 
 
-* Opret nu endnu en ny side `<MachinesDashboard>` hvor vi både kan se vores `<ClickMachines/>` og `<CompactViewList/>`
+* Opret nu endnu en ny side `<MachinesDashboard>` hvor vi både kan se vores `<ClickMachines/>` og `<CompactViewList/>` - ruten skal være `/dashboard`
 
 
