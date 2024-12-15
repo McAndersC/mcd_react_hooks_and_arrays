@@ -1,0 +1,56 @@
+.clickMachines {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+
+  
+
+    .total {
+
+        width : 128px;
+        height : 128px;
+        border-radius: 64px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: #fff;
+
+        &.green {
+            background-color: green;
+        }
+
+        &.red {
+            background-color: red;
+        }
+
+        &.blue {
+            background-color: blue;
+        }
+
+    }
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .table {
+       
+        .row {
+            display: flex;
+            gap : 10px;
+            text-align: center;
+            > div {
+                min-width: 100px;
+            }
+        }
+    }
+}

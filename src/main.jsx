@@ -8,12 +8,16 @@ import fonts from "./services/fonts.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { basename } from "./services/settings.jsx";
+import { MachinesContextProvider } from "./context/machines.context.jsx";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
 
       <BrowserRouter basename={basename}>
-        <App />
+        <MachinesContextProvider>
+          <App />
+        </MachinesContextProvider>
       </BrowserRouter>
 
   </React.StrictMode>

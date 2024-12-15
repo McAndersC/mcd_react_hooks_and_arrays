@@ -2,10 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 import styles from './navigation.module.css'
 import { useState } from "react";
 import { icons } from "../../services/icons";
+import { useMachines } from "../../hooks/machines.hook";
 
 const Navigation = () => {
 
     const [isOpen, setIsOpen] = useState(false)
+    const {name, shout} = useMachines()
 
 
     const toggleNavigation = () => {
@@ -14,21 +16,55 @@ const Navigation = () => {
         setIsOpen(!isOpen)
         
     }
+
+    const nav = [
+        {
+            path : "/",
+            title : "Home"
+        },
+        {
+            path : "/boxes",
+            title : "Boxes"
+        },
+        {
+            path : "/clickmachines",
+            title : "Click Machines"
+        },
+        {
+            path : "/prettymachines",
+            title : "Pretty Machines"
+        },
+        {
+            path : "/dashboard",
+            title : "Dashboard"
+        },
+        {
+            path : "/many",
+            title : "Many"  
+        },
+        {
+            path : "/many-more",
+            title : "Many More"  
+        }
+    ]
   
     return (
         <div className={styles.navigation}>
             {/* <a href="/">FORSIDE</a> */}
 
-            <div>
+            <div onClick={shout}>
 
-                LOGO
+                LOGO {name}
 
             </div>
             <div className={styles.actions}>
 
                 <div className={`${styles.nav} ${isOpen ? styles.open : ''}` }>
-                    <NavLink to={"/"} className={({ isActive }) => (isActive ? styles.active : "")}>Home</NavLink>
-                    <NavLink to={"/boxes"} className={({ isActive }) => (isActive ? styles.active : "")}>Boxes</NavLink>
+
+                    {nav.map( (item, index) => {
+                        return <NavLink key={index} to={item.path} className={({ isActive }) => (isActive ? styles.active : "")}>{item.title}</NavLink>
+                    })}
+              
                 </div>
                 
                 <div onClick={toggleNavigation}>
